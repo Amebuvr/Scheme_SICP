@@ -58,4 +58,4 @@
 ;        (let ((rest (subsets (cdr s))))
 ;            (append rest (map (lambda (x) (cons (car s) x)) rest)))))
 ;这个过程更应该包含在list.ss里，我已经将它复制过去了
-(exit)
+;(exit)

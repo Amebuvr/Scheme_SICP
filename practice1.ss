@@ -36,7 +36,11 @@
     (cond 
         ((> col row) (error "Index Out Of Bounds Exception --pascal"))
         ((or (= col 0) (= row col)) 1)
+        ;((or (= col -1) (> col row)) 0)
         (else (+ (pascal (- row 1) (- col 1)) (pascal (- row 1) col)))))
 
-(display (pascal 1 2))
+(display (list (pascal 0 0))) (newline)
+(display (list (pascal 1 0) (pascal 1 1))) (newline)
+(display (list (pascal 2 0) (pascal 2 1) (pascal 2 2))) (newline)
+(display (list (pascal 3 0) (pascal 3 1) (pascal 3 2) (pascal 3 3)))
 (exit)

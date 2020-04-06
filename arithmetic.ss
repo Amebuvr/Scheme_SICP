@@ -93,4 +93,4 @@
                 (try next))))
     (try first-guess))
 
-(exit)
+;(exit)
